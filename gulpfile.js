@@ -1,16 +1,19 @@
 import gulp from 'gulp';
-import less from 'gulp-less';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+// import less from 'gulp-less';
 import { deleteAsync } from 'del';
 import rename from 'gulp-rename';
 import cleanCSS from 'gulp-clean-css';
 import babel from 'gulp-babel';
 import GulpUglify from 'gulp-uglify';
 import concat from 'gulp-concat'
+const sass = gulpSass(dartSass);
 
 // пути к файлам назначения
 const paths = {
     styles: {
-        src: 'src/styles/**/*.less',
+        src: ['src/styles/**/*.sass','src/styles/**/*.scss'],
         dest: 'dist/css/'
     },
     scripts: {
@@ -27,7 +30,8 @@ const _clean = clean;
 // задача для обработки стилей
 function styles() {
     return gulp.src(paths.styles.src)
-    .pipe(less())
+    // .pipe(less())
+		.pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(rename({
         basename: 'main',
