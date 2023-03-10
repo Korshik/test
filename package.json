@@ -1,7 +1,7 @@
 {
-  "name": "online-zoo",
+  "name": "test",
   "version": "1.0.0",
-  "description": "online-zoo platform with webcams",
+  "description": "test",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Korshik/GulpBuild.git"
+    "url": "git+https://github.com/Korshik/test.git"
   },
   "author": "Viktoriya Chekunova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Korshik/Online-Zoo/issues"
+    "url": "https://github.com/Korshik/test.git/issues"
   },
-  "homepage": "https://github.com/Korshik/Online-Zoo#readme",
+  "homepage": "https://github.com/Korshik/test.git#readme",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "del": "^7.0.0",
