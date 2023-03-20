@@ -7,13 +7,30 @@ body
   color: $primary-color
   width: 100%
   background: #F4F5FC
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  overflow: auto
 
 .container
   position: absolute
+  width: 665px
+  height: 496px
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
 
-// .sign-up
-//   padding: 3.78rem 4.185rem 3.72rem 4.25rem
-//   position: absolute
+.form-control
+  background-color: rgba(249, 249, 249, 0)
+.form-select
+  background-color: rgba(249, 249, 249, 0)
+
+.content
+  background-color: #FFFFFF
+  overflow: hidden
 
 .col-2-text
   white-space: nowrap
@@ -33,25 +50,35 @@ body
   
 .row 
   width: 100%
-  padding: 2.75rem 0.1rem 0.1rem 4.20rem
+  max-width: 665px
+  background: rgba(249, 249, 249, 0)
+  overflow: hidden
+  position: absolute
   
 .col-2 
   background-color: #5A61ED
-  max-width: 137.2px
+  max-width: 137px
   width: 100%
+.col-4
+  margin-top:8px
+  margin-left: -20px
+  max-width: 236px
 .wrap
-  margin-right: 42px
-  margin-top: 0px
+
+  margin-right: -18px
+  margin-top: 41px
+  margin-left: 0px
+.page-form
+  position: relative
+
+.col-7
+  max-width: 235px
 
 .col-8
-  max-width: 527.8px
-  width: 100%
-  background-color: #FFFFFF  
-  padding-left: 0px
+  max-width: 289px
 
 .col-8-header
-  height: 26px
-  left: 0%
+  margin-left: 10px
   right: 77.32%
   top: calc(50% - 26px/2 - 191.5px)
   font-family: 'WorkSans'
@@ -59,29 +86,157 @@ body
   line-height: 26px
   letter-spacing: -0.46px
   color: #111111
-  margin-top: 79.52px 
-  padding-left: 68.3px
+
 
 .col-8-subheader
   height: 16px
-  left: 0%
-  right: 41.03%
-  top: calc(50% - 16px/2 - 170.5px)
+  margin-left: 10px
+  margin-top: -8px
   font-family: 'WorkSans'
   font-size: 14px
   line-height: 16px
   color: #111111
-  padding-left: 68.3px
+.col-9
+  max-width: 528px
+  width: 100%
 
 .row-login
   display: flex
   flex-direction: column
   align-items: center
   padding: 0px
-  height: 2vh
-  margin-top: -4px
-  margin-left: 54px
+  height: 2.1vh
+  margin-top: -2px
   max-width: 665px
   width: 100%
   filter: drop-shadow(0px 12px 82px rgba(0, 0, 0, 0.2))
   background-color: #e0e1e7
+
+.birthday label
+  font-size: 20px
+  display: block
+
+
+.birthday select 
+  display: inline
+  padding-top: 0px
+  border-radius: 0
+
+.day-select
+  width: 82px
+  margin-top: 0px
+  border-radius: 0
+
+.month-select
+  width: 119px
+  margin-left: -20px
+  margin-right: -40px
+  border-radius: 0
+ 
+.year-select
+  width: 89px
+  padding: 6px
+  margin-left: 23px
+  border-radius: 0
+
+.container-flex
+  display: flex
+  flex-flow: row wrap
+.gender
+  margin-left: -13px
+.form-control
+  border-radius: 0
+.form-label
+  margin-bottom: 0px
+
+.form-check
+  margin: 8px
+  padding: 5px
+  margin-top: 0px
+
+.form-check-input
+  margin-top: 0
+  margin-right: 1px
+
+.form-check .form-check-input
+  float: none
+
+.first-name
+  margin-left: 9px
+  padding-top: 7px
+.last-name
+  margin-top: 10px
+  margin-left: 24px
+#inputFirstName
+  width: 235px
+  margin-top: -1px
+
+#inputLastName
+  margin-left: 18px
+  margin-top: -4px
+  width: 235px
+
+.nationality
+  margin-left: 9px
+  margin-top: 10px
+.email
+  margin-left: 24px
+  margin-top: 9px
+
+
+#inputEmail
+  margin-left: 16px
+  margin-top: -1px  
+  width: 235px
+#selectNationality
+  margin-left: 1px
+  margin-top: -8px
+  width: 260px
+  border-radius: 0
+
+.date-birth     
+  margin-left: 9px
+  margin-top: 4px
+
+.password
+  margin-left: 9px
+  padding-top: 7px
+.confirm
+  margin-top: 10px
+  margin-left: 24px
+#inputPassword
+  width: 235px
+  margin-top: -1px
+  
+#inputConfirm
+  margin-left: 18px
+  margin-top: -4px
+  width: 235px
+.button-container
+  top: 232px
+  position: relative
+  right: 20px
+
+.btn
+  position: relative
+  height: 32px
+  width: 154px
+  left: 69%
+  top: 297%
+  --bs-btn-font-weight: 400
+  --bs-btn-color: #FFFFFF
+  --bs-btn-bg: #5A61ED
+  --bs-btn-border-radius: 0.5px solid #FFFFFF
+  --bs-btn-hover-color: var(--bs-white)
+  --bs-btn-hover-bg: #5A61ED
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb)
+  --bs-btn-active-color: var(--bs-btn-hover-color)
+
+.user-icon
+  opacity: .5
+  position: absolute
+  height: 430px
+  top: 100px
+  left: 345px
+  max-width: 430px
+  width: 100%

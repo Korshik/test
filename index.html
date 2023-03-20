@@ -11,195 +11,203 @@
 <body>
 	<div class="container">
 		<div class="row" > 
+			<object class="user-icon" id="user-svg" type="image/svg+xml" data="src/icons/Shape.svg"></object>
+
       <div class="col-2">
 				<p class="col-2-text">Sign up</p>
 			</div>
-			
-      <div class="col-8">
+      <div class="col-9 content">
 				<div class="wrap">
-					<h1 class="col-8-header">New user? </h1>
-				<h3 class="col-8-subheader">Use the form below to create your account.</h3>
-					<form action="action_page.ph">
-						<div class="row">
-							<div class="col-6">
-								<label for="inputFirstName" class="form-label">First Name</label>
-								<input type="text" class="form-control" id="inputFirstName" placeholder="Alice">
+						<h1 class="col-8-header">New user? </h1>
+						<h3 class="col-8-subheader">Use the form below to create your account.</h3>
+						<form class="page-form">
+							<div class="row">
+								<div class="col-7">
+									<label for="inputFirstName" class="form-label first-name">First Name</label>
+									<input type="text" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputFirstName" placeholder="Alice">
+								</div>
+								<div class="col-7">
+									<label for="inputLastName" class="form-label last-name">Last Name</label>
+									<input type="text" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputLastName" placeholder="Miller">
+								</div>
+								<div class="col-7">
+									<label for="selectNationality" class="form-label nationality">Nationality</label>
+										<select class="form-select form-control-sm border border-top-0 border-end-0 border-start-0"  id="selectNationality">
+											<option value="brit">British</option>
+											<option value="scot">Scottish</option>
+											<option value="ir">Irish</option>
+											<option value="wel">Welsh</option>
+											<option value="dan">Danish</option>
+											<option value="fin">Finnish</option>
+											<option value="nor">Norwegian</option>
+											<option value="swed">Swedish</option>
+											<option value="swis">Swiss</option>
+											<option value="est">Estonian</option>
+											<option value="lat">Latvian</option>
+											<option value="lit">Lithuanian</option>
+											<option value="aust">Austrian</option>
+											<option value="belg">Belgian</option>
+											<option value="fr">French</option>
+											<option value="germ">German</option>
+											<option value="ital">Italian</option>
+											<option value="dut">Dutch</option>
+											<option value="americ">American</option>
+											<option value="canad">Canadian</option>
+											<option value="mexic">Mexican</option>
+											<option value="ukr">Ukrainian</option>
+											<option value="rus">Russian</option>
+											<option value="bel">Belarusian</option>
+											<option value="pol">Polish</option>
+											<option value="cz">Czech</option>
+											<option value="sl">Slovak/Slovakian
+											</option>
+											<option value="hung">Hungarian</option>
+											<option value="roma">Romanian</option>
+											<option value="bulg">Bulgarian</option>
+											<option value="gr">Greek</option>
+											<option value="span">Spanish</option>
+										</select>
+								</div>
+								<div class="col-7">
+									<label for="inputEmail" class="form-label email">E-mail</label>
+									<input type="email" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputEmail" placeholder="name@example.com">
+								</div>
+								<div class="col-8 birthday">
+									<label class="date-birth" >Date of Birth</label>
+										<select class="form-select day-select border border-top-0 border-end-0 border-start-0"  id="bDay">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>	
+											<option value="10">10</option>	
+											<option value="11">11</option>	
+											<option value="12">12</option>	
+											<option value="13">13</option>	
+											<option value="14">14</option>	
+											<option value="15">15</option>	
+											<option value="16">16</option>	
+											<option value="17">17</option>	
+											<option value="18">18</option>	
+											<option value="19">19</option>	
+											<option value="20">20</option>	
+											<option value="21" selected>21</option>	
+											<option value="22">22</option>	
+											<option value="23">23</option>	
+											<option value="24">24</option>	
+											<option value="25">25</option>	
+											<option value="26">26</option>	
+											<option value="27">27</option>	
+											<option value="28">28</option>												
+											<option value="29">29</option>	
+											<option value="30">30</option>
+										</select>
+										<select class="form-select border border-top-0 border-end-0 border-start-0 month-select" id="bMonth">
+											<option value="jan">Jan</option>
+											<option value="Feb">Feb</option>
+											<option value="Mar">Mar</option>
+											<option value="Apr">April</option>
+											<option value="May" >May</option>
+											<option value="Jun">Jun</option>
+											<option value="July">July</option>
+											<option value="August">August</option>
+											<option value="Sept">September</option>
+											<option value="Oct">October</option>
+											<option value="Nov" selected>November</option>
+											<option value="Dec">December</option>
+										</select>
+										<select class="form-select border border-top-0 border-end-0 border-start-0 year-select" id="bYear">
+											<option value="1960">1960</option>
+											<option value="1961">1961</option>
+											<option value="1962">1962</option>
+											<option value="1963">1963</option>
+											<option value="1964">1964</option>
+											<option value="1965">1965</option>
+											<option value="1966">1966</option>
+											<option value="1967">1967</option>
+											<option value="1968">1968</option>
+											<option value="1969">1969</option>
+											<option value="1970">1970</option>
+											<option value="1971">1971</option>
+											<option value="1972">1972</option>
+											<option value="1973">1973</option>
+											<option value="1974">1974</option>
+											<option value="1975">1975</option>
+											<option value="1976">1976</option>
+											<option value="1977">1977</option>
+											<option value="1978">1978</option>
+											<option value="1979">1979</option>
+											<option value="1980">1980</option>
+											<option value="1981">1981</option>
+											<option value="1982">1982</option>
+											<option value="1983">1983</option>
+											<option value="1984">1984</option>
+											<option value="1985">1985</option>
+											<option value="1986">1986</option>
+											<option value="1987">1987</option>
+											<option value="1988">1988</option>
+											<option value="1989">1989</option>
+											<option value="1990">1990</option>
+											<option value="1991">1991</option>
+											<option value="1992">1992</option>
+											<option value="1993">1993</option>
+											<option value="1994">1994</option>
+											<option value="1995" selected>1995</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+											<option value="2000">2000</option>
+											<option value="2001">2001</option>
+											<option value="2002">2002</option>
+											<option value="2003">2003</option>
+											<option value="2004">2004</option>
+											<option value="2005">2005</option>
+											<option value="2006">2006</option>
+											<option value="2007">2007</option>
+											<option value="2008">2008</option>
+											<option value="2009">2009</option>
+											<option value="2010">2010</option>
+											<option value="2011">2011</option>
+											<option value="2012">2012</option>
+											<option value="2013">2013</option>
+										</select>	
+								</div>	
+								<div class="col-4">
+									<div class="form-label container-flex gender">Gender</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
+											<label class="form-check-label-male" for="male">Male</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="female">
+											<label class="form-check-label-female" for="female">Female</label>
+										</div>
+								</div>
+								<div class="col-7">
+									<label for="inputPassword" class="form-label password">Password</label>
+									<input type="text" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputPassword">
+								</div>
+								<div class="col-7">
+									<label for="inputConfirm" class="form-label confirm">Confirm Password</label>
+									<input type="text" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputConfirm">
+								</div>
 							</div>
-							<div class="col-6">
-								<label for="inputLastName" class="form-label">Last Name</label>
-								<input type="text" class="form-control" id="inputLastName" placeholder="Miller">
+							<div class="d-grid gap-2 button-container">
+								<button class="btn bd-primary" type="button">Complete Signup</button>
 							</div>
-							<div class="col-6">
-								<label for="selectNationality" class="form-label">Nationality</label>
-								<select class="form-select"  id="selectNationality">
-									<option value="brit">British</option>
-									<option value="scot">Scottish</option>
-									<option value="ir">Irish</option>
-									<option value="wel">Welsh</option>
-									<option value="dan">Danish</option>
-									<option value="fin">Finnish</option>
-									<option value="nor">Norwegian</option>
-									<option value="swed">Swedish</option>
-									<option value="swis">Swiss</option>
-									<option value="est">Estonian</option>
-									<option value="lat">Latvian</option>
-									<option value="lit">Lithuanian</option>
-									<option value="aust">Austrian</option>
-									<option value="belg">Belgian</option>
-									<option value="fr">French</option>
-									<option value="germ">German</option>
-									<option value="ital">Italian</option>
-									<option value="dut">Dutch</option>
-									<option value="americ">American</option>
-									<option value="canad">Canadian</option>
-									<option value="mexic">Mexican</option>
-									<option value="ukr">Ukrainian</option>
-									<option value="rus">Russian</option>
-									<option value="bel">Belarusian</option>
-									<option value="pol">Polish</option>
-									<option value="cz">Czech</option>
-									<option value="sl">Slovak/Slovakian
-									</option>
-									<option value="hung">Hungarian</option>
-									<option value="roma">Romanian</option>
-									<option value="bulg">Bulgarian</option>
-									<option value="gr">Greek</option>
-									<option value="span">Spanish</option>
-								</select>
-							</div>
-							<div class="col-6">
-								<label for="inputEmail" class="form-label">E-mail</label>
-								<input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
-							</div>
-							<div class="col-8">
-                <label for="bday" >Date of Birth</label>
-                  <select id="bday">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4" selected>4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>	
-                    <option value="10">10</option>	
-                    <option value="11">11</option>	
-                    <option value="12">12</option>	
-                    <option value="13">13</option>	
-                    <option value="14">14</option>	
-                    <option value="15">15</option>	
-                    <option value="16">16</option>	
-                    <option value="17">17</option>	
-                    <option value="18">18</option>	
-                    <option value="19">19</option>	
-                    <option value="20">20</option>	
-                    <option value="21">21</option>	
-                    <option value="22">22</option>	
-                    <option value="23">23</option>	
-                    <option value="24">24</option>	
-                    <option value="25">25</option>	
-                    <option value="26">26</option>	
-                    <option value="27">27</option>	
-                    <option value="28">28</option>	
-                    <option value="29">29</option>	
-                    <option value="30">30</option>	
-                    <option value="31">31</option>									
-                	</select>
-									<select>
-										<option value="jan">Jan</option>
-										<option value="Feb">Feb</option>
-										<option value="Mar">Mar</option>
-										<option value="Apr">April</option>
-										<option value="May" selected>May</option>
-										<option value="Jun">Jun</option>
-										<option value="July">July</option>
-										<option value="August">August</option>
-										<option value="Sept">September</option>
-										<option value="Oct">October</option>
-										<option value="Nov">November</option>
-										<option value="Dec">December</option>
-									</select>
-									<select>
-										<option value="1960">1960</option>
-										<option value="1961">1961</option>
-										<option value="1962">1962</option>
-										<option value="1963">1963</option>
-										<option value="1964">1964</option>
-										<option value="1965">1965</option>
-										<option value="1966">1966</option>
-										<option value="1967">1967</option>
-										<option value="1968">1968</option>
-										<option value="1969">1969</option>
-										<option value="1970">1970</option>
-										<option value="1971">1971</option>
-										<option value="1972">1972</option>
-										<option value="1973">1973</option>
-										<option value="1974">1974</option>
-										<option value="1975">1975</option>
-										<option value="1976">1976</option>
-										<option value="1977">1977</option>
-										<option value="1978">1978</option>
-										<option value="1979">1979</option>
-										<option value="1980">1980</option>
-										<option value="1981">1981</option>
-										<option value="1982">1982</option>
-										<option value="1983">1983</option>
-										<option value="1984">1984</option>
-										<option value="1985">1985</option>
-										<option value="1986">1986</option>
-										<option value="1987">1987</option>
-										<option value="1988">1988</option>
-										<option value="1989">1989</option>
-										<option value="1990">1990</option>
-										<option value="1991">1991</option>
-										<option value="1992">1992</option>
-										<option value="1993">1993</option>
-										<option value="1994">1994</option>
-										<option value="1995" selected>1995</option>
-										<option value="1996">1996</option>
-										<option value="1997">1997</option>
-										<option value="1998">1998</option>
-										<option value="1999">1999</option>
-										<option value="2000">2000</option>
-										<option value="2001">2001</option>
-										<option value="2002">2002</option>
-										<option value="2003">2003</option>
-										<option value="2004">2004</option>
-										<option value="2005">2005</option>
-										<option value="2006">2006</option>
-										<option value="2007">2007</option>
-										<option value="2008">2008</option>
-										<option value="2009">2009</option>
-										<option value="2010">2010</option>
-										<option value="2011">2011</option>
-										<option value="2012">2012</option>
-										<option value="2013">2013</option>
-						</select>
-						<div class="col-9">
-							<label for="gender" class="form-label">Gender</label>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
-								<label class="form-check-label" for="male">
-									Male
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="female">
-								<label class="form-check-label" for="female">
-									Female
-								</label>
-							</div>
-						</div>
-						</div>
-						</div>
-					</form>
+						</form>
 				</div>
-				
 			</div> 
+			<div class="col-7 row-login"><p>Have an account? Login</p></div>
+
    </div> 
-	<div class="col-7 row-login"><p>Have an account? Login</p></div>
 	</div>
+	<script src="//cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   <script src="dist/js/main.min.js"></script>
 </body>
