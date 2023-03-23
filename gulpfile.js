@@ -7,8 +7,10 @@ import rename from 'gulp-rename';
 import cleanCSS from 'gulp-clean-css';
 import babel from 'gulp-babel';
 import GulpUglify from 'gulp-uglify';
-import concat from 'gulp-concat'
+import concat from 'gulp-concat';
+import ttf2woff2 from 'gulp-ttf2woff2';
 const sass = gulpSass(dartSass);
+
 
 // пути к файлам назначения
 const paths = {
@@ -19,7 +21,11 @@ const paths = {
     scripts: {
         src: 'src/scripts/**/*.js',
         dest: 'dist/js/' 
-    }
+    },
+		fonts: {
+			src: 'src/fonts/**/*.ttf',
+			dest: 'dist/fonts/'
+		}
 }
 // задача для очистки каталога
 function clean() {
@@ -49,17 +55,25 @@ function scripts(){
     .pipe(concat('main.min.js'))
     .pipe(gulp.dest(paths.scripts.dest))
 }
+// задача для обработки щрифтов
+function fonts(){
+	return gulp.src(paths.fonts.src)
+	.pipe(ttf2woff2())
+	.pipe(gulp.dest(paths.fonts.dest))
+}
 // задача для отслеживания изменений
 function watch(){
     gulp.watch(paths.styles.src, styles)
     gulp.watch(paths.scripts.src, scripts)
+		gulp.watch(paths.fonts.src, fonts)
 }
 
-const build = gulp.series(clean, gulp.parallel(styles,scripts), watch)
+const build = gulp.series(clean, gulp.parallel(styles,scripts, fonts), watch)
 
 export { _clean as clean };
 export { styles };
 export { scripts };
+export { fonts };
 export { watch };
 export { build };
 export default build;

@@ -23,7 +23,7 @@
 						<form class="page-form">
 							<div class="row">
 								<div class="col-7">
-									<label for="inputFirstName" class="form-label first-name">First Name</label>
+									<label for="inputFirstName" class="form-label first-name"> First Name</label>
 									<input type="text" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputFirstName" placeholder="Alice">
 								</div>
 								<div class="col-7">
@@ -51,7 +51,7 @@
 											<option value="germ">German</option>
 											<option value="ital">Italian</option>
 											<option value="dut">Dutch</option>
-											<option value="americ">American</option>
+											<option value="americ" selected>American</option>
 											<option value="canad">Canadian</option>
 											<option value="mexic">Mexican</option>
 											<option value="ukr">Ukrainian</option>
@@ -70,10 +70,10 @@
 								</div>
 								<div class="col-7">
 									<label for="inputEmail" class="form-label email">E-mail</label>
-									<input type="email" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputEmail" placeholder="name@example.com">
+									<input type="email" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputEmail" placeholder="alice.miller@yahoo.com">
 								</div>
 								<div class="col-8 birthday">
-									<label class="date-birth" >Date of Birth</label>
+									<label class="form-label date-birth" >Date of Birth</label>
 										<select class="form-select day-select border border-top-0 border-end-0 border-start-0"  id="bDay">
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -117,8 +117,8 @@
 											<option value="August">August</option>
 											<option value="Sept">September</option>
 											<option value="Oct">October</option>
-											<option value="Nov" selected>November</option>
-											<option value="Dec">December</option>
+											<option value="Nov" >November</option>
+											<option value="Dec" selected>December</option>
 										</select>
 										<select class="form-select border border-top-0 border-end-0 border-start-0 year-select" id="bYear">
 											<option value="1960">1960</option>
@@ -188,22 +188,23 @@
 											<label class="form-check-label-female" for="female">Female</label>
 										</div>
 								</div>
-								<div class="col-7">
+								<div class="col-7 password-select">
 									<label for="inputPassword" class="form-label password">Password</label>
 									<input type="text" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputPassword">
 								</div>
-								<div class="col-7">
+								<div class="col-7 password-select">
 									<label for="inputConfirm" class="form-label confirm">Confirm Password</label>
 									<input type="text" class="form-control form-control-sm border border-top-0 border-end-0 border-start-0" id="inputConfirm">
 								</div>
 							</div>
 							<div class="d-grid gap-2 button-container">
 								<button class="btn bd-primary" type="button">Complete Signup</button>
+								<div class="col-7 row-login"><p>Have an account? <a href="http://">Login</a> </p></div>
+
 							</div>
 						</form>
 				</div>
 			</div> 
-			<div class="col-7 row-login"><p>Have an account? Login</p></div>
 
    </div> 
 	</div>
